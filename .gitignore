@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+.bun/
+
+# Build output
+dist/
+.next/
+out/
+
+# Environment variables (JANGAN pernah di-commit!)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Prisma
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
