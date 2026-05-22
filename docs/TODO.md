@@ -38,14 +38,14 @@
 
 | Status | Item | File / Aksi |
 |--------|------|-------------|
-| ⬜ | Tulis `schema.prisma` — model User, Role, Permission | `backend/prisma/schema.prisma` |
-| ⬜ | Tambah model Property, Room ke schema | `backend/prisma/schema.prisma` |
-| ⬜ | Tambah model Booking, Payment, Report ke schema | `backend/prisma/schema.prisma` |
-| ⬜ | Jalankan migrasi awal (`prisma migrate dev`) | CLI |
-| ⬜ | Buat `seed.ts` — seed roles (OWNER, OPERATOR, TENANT) | `backend/prisma/seed.ts` |
-| ⬜ | Tambah seed permissions (semua 22 slug) ke `seed.ts` | `backend/prisma/seed.ts` |
-| ⬜ | Tambah seed user owner default ke `seed.ts` | `backend/prisma/seed.ts` |
-| ⬜ | Jalankan seed (`bun prisma/seed.ts`) | CLI |
+| ✅ | Tulis `schema.prisma` — model User, Role, Permission | `backend/prisma/schema.prisma` |
+| ✅ | Tambah model Property, Room ke schema | `backend/prisma/schema.prisma` |
+| ✅ | Tambah model Booking, Payment, Report ke schema | `backend/prisma/schema.prisma` |
+| ✅ | Jalankan migrasi awal (`prisma migrate dev`) | CLI |
+| ✅ | Buat `seed.ts` — seed roles (OWNER, OPERATOR, TENANT) | `backend/prisma/seed.ts` |
+| ✅ | Tambah seed permissions (semua 22 slug) ke `seed.ts` | `backend/prisma/seed.ts` |
+| ✅ | Tambah seed user owner default ke `seed.ts` | `backend/prisma/seed.ts` |
+| ✅ | Jalankan seed (`bun prisma/seed.ts`) | CLI |
 
 ---
 
@@ -57,12 +57,12 @@
 
 | Status | Item | File |
 |--------|------|------|
-| ⬜ | Setup Express app (middleware, CORS, Helmet, Morgan) | `backend/src/app.ts` |
-| ⬜ | Entry point server | `backend/index.ts` |
-| ⬜ | Validasi & export env variables | `backend/src/config/env.ts` |
-| ⬜ | Setup Winston logger | `backend/src/config/logger.ts` |
-| ⬜ | Singleton PrismaClient | `backend/src/infrastructure/database/prisma.client.ts` |
-| ⬜ | Extend Express Request type (user, permissions) | `backend/src/types/express.d.ts` |
+| ✅ | Setup Express app (middleware, CORS, Helmet, Morgan) | `backend/src/app.ts` |
+| ✅ | Entry point server | `backend/index.ts` |
+| ✅ | Validasi & export env variables | `backend/src/config/env.ts` |
+| ✅ | Setup Winston logger | `backend/src/config/logger.ts` |
+| ✅ | Singleton PrismaClient | `backend/src/infrastructure/database/prisma.client.ts` |
+| ✅ | Extend Express Request type (user, permissions) | `backend/src/types/express.d.ts` |
 
 ### 3.2 Constants
 
@@ -281,9 +281,9 @@
 
 | Phase | Nama | Total Item | Selesai |
 |-------|------|-----------|---------|
-| 1 | Setup Monorepo | 7 | 0 |
-| 2 | Database | 8 | 0 |
-| 3 | Backend Core | 26 | 0 |
+| 1 | Setup Monorepo | 7 | 7 ✅ |
+| 2 | Database | 8 | 8 ✅ |
+| 3 | Backend Core | 26 | 6 ✅ |
 | 4 | Backend Domain | 42 | 0 |
 | 5 | Frontend Setup | 18 | 0 |
 | 6 | Frontend Auth | 4 | 0 |
@@ -291,7 +291,7 @@
 | 8 | Frontend TENANT | 6 | 0 |
 | 9 | Frontend OWNER & OPERATOR | 4 | 0 |
 | 10 | Polish | 6 | 0 |
-| | **Total** | **126** | **0** |
+| | **Total** | **126** | **21 ✅** |
 
 ---
 

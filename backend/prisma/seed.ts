@@ -1,4 +1,6 @@
 import { PrismaClient } from "@prisma/client";
+
+type PermissionRef = { id: string };
 import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
@@ -103,7 +105,7 @@ async function main() {
         permissions: {
           set: await prisma.permission
             .findMany({ where: { slug: { in: slugs } } })
-            .then((perms) => perms.map((p) => ({ id: p.id }))),
+            .then((perms: PermissionRef[]) => perms.map((p) => ({ id: p.id }))),
         },
       },
       create: {
@@ -111,7 +113,7 @@ async function main() {
         permissions: {
           connect: await prisma.permission
             .findMany({ where: { slug: { in: slugs } } })
-            .then((perms) => perms.map((p) => ({ id: p.id }))),
+            .then((perms: PermissionRef[]) => perms.map((p) => ({ id: p.id }))),
         },
       },
     });
