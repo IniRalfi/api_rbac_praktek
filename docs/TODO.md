@@ -87,13 +87,13 @@
 
 | Status | Item | File |
 |--------|------|------|
-| ⬜ | User entity | `backend/src/core/entities/user.entity.ts` |
-| ⬜ | Role entity | `backend/src/core/entities/role.entity.ts` |
-| ⬜ | User repository (findByEmail, findById, create) | `backend/src/infrastructure/database/user.repository.ts` |
-| ⬜ | Register use case | `backend/src/core/use-cases/auth/register.usecase.ts` |
-| ⬜ | Login use case | `backend/src/core/use-cases/auth/login.usecase.ts` |
-| ⬜ | Auth controller (register, login, me) | `backend/src/interfaces/controllers/auth.controller.ts` |
-| ⬜ | Auth routes | `backend/src/interfaces/routes/auth.routes.ts` |
+| ✅ | User entity | `backend/src/core/entities/user.entity.ts` |
+| ✅ | Role entity | `backend/src/core/entities/role.entity.ts` |
+| ✅ | User repository (findByEmail, findById, create) | `backend/src/infrastructure/database/user.repository.ts` |
+| ✅ | Register use case | `backend/src/core/use-cases/auth/register.usecase.ts` |
+| ✅ | Login use case | `backend/src/core/use-cases/auth/login.usecase.ts` |
+| ✅ | Auth controller (register, login, me) | `backend/src/interfaces/controllers/auth.controller.ts` |
+| ✅ | Auth routes | `backend/src/interfaces/routes/auth.routes.ts` |
 
 ### 3.5 Middleware
 
@@ -283,7 +283,7 @@
 |-------|------|-----------|---------|
 | 1 | Setup Monorepo | 7 | 7 ✅ |
 | 2 | Database | 8 | 8 ✅ |
-| 3 | Backend Core | 26 | 15 ✅ |
+| 3 | Backend Core | 26 | 22 ✅ |
 | 4 | Backend Domain | 42 | 0 |
 | 5 | Frontend Setup | 18 | 0 |
 | 6 | Frontend Auth | 4 | 0 |
@@ -291,7 +291,7 @@
 | 8 | Frontend TENANT | 6 | 0 |
 | 9 | Frontend OWNER & OPERATOR | 4 | 0 |
 | 10 | Polish | 6 | 0 |
-| | **Total** | **126** | **30 ✅** |
+| | **Total** | **126** | **37 ✅** |
 
 ---
 
