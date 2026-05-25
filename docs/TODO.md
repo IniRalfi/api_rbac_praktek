@@ -78,10 +78,10 @@
 
 | Status | Item | File |
 |--------|------|------|
-| ⬜ | Standard API response helper | `backend/src/utils/response.ts` |
-| ⬜ | Pagination query helper | `backend/src/utils/pagination.ts` |
-| ⬜ | Bcrypt wrapper | `backend/src/infrastructure/security/bcrypt.ts` |
-| ⬜ | JWT wrapper (sign & verify) | `backend/src/infrastructure/security/jwt.ts` |
+| ✅ | Standard API response helper | `backend/src/utils/response.ts` |
+| ✅ | Pagination query helper | `backend/src/utils/pagination.ts` |
+| ✅ | Bcrypt wrapper | `backend/src/infrastructure/security/bcrypt.ts` |
+| ✅ | JWT wrapper (sign & verify) | `backend/src/infrastructure/security/jwt.ts` |
 
 ### 3.4 Auth
 
@@ -283,7 +283,7 @@
 |-------|------|-----------|---------|
 | 1 | Setup Monorepo | 7 | 7 ✅ |
 | 2 | Database | 8 | 8 ✅ |
-| 3 | Backend Core | 26 | 11 ✅ |
+| 3 | Backend Core | 26 | 15 ✅ |
 | 4 | Backend Domain | 42 | 0 |
 | 5 | Frontend Setup | 18 | 0 |
 | 6 | Frontend Auth | 4 | 0 |
@@ -291,7 +291,7 @@
 | 8 | Frontend TENANT | 6 | 0 |
 | 9 | Frontend OWNER & OPERATOR | 4 | 0 |
 | 10 | Polish | 6 | 0 |
-| | **Total** | **126** | **26 ✅** |
+| | **Total** | **126** | **30 ✅** |
 
 ---
 
